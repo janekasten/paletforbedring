@@ -1,0 +1,916 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #ecf5d4;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+/*footer både til mobil og web*/
+
+footer {
+    background-color: #667e90;
+    color: ghostwhite;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+/*tekst til undersider*/
+
+.tekst h1 {
+    text-align: center;
+}
+
+.tekst h1,
+.tekst h2,
+.tekst h3 {
+    color: #667e90;
+}
+
+.tekst h2,
+.tekst h3 {
+    margin-top: 30px;
+    line-height: 0;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+
+/*circle til slideshow*/
+
+.circle {
+    margin-right: 15px;
+    display: inline-block;
+    background-color: lightgrey;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+}
+
+
+/*CSS til mobilversion*/
+
+@media only screen and (max-width: 600px) {
+
+    /*vis ikke på mobil*/
+    #logoweb {
+        display: none;
+    }
+
+    #slideshow-wrapper {
+        display: none;
+    }
+
+    /*vis ikke tekst i footer*/
+    .lefttext {
+        display: none;
+    }
+    .centertext {
+        display: none;
+    }
+
+
+    /*tilbage pil*/
+    #backarrow {
+        float: left;
+        width: 30px;
+        background-color: #667e90;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        margin: 5px -30px 0 5px;
+    }
+
+
+    /*logo til mobil*/
+    #logomobil {
+        width: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+    }
+
+
+    /*slideshow til mobil*/
+    #slideshow-wrappermobil {
+        width: 95%;
+        height: 200px;
+        margin: 30px auto;
+    }
+
+    #slideshowmobil {
+        margin-bottom: 5px;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    #slideshowmobil img {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /*vis ikke menu på andre sider end index*/
+    .nomenu {
+        display: none;
+    }
+
+    .notmobil {
+        display: none;
+    }
+
+
+    /*menu til mobil*/
+    .menumobil {
+        font-family: "Open Sans", sans-serif;
+        text-align: center;
+        list-style-type: none;
+        padding: 0px;
+        margin: 5px 50px;
+        overflow: hidden;
+    }
+
+    .menumobil li a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .menumobil li {
+        border-style: solid;
+        border-color: #cdd1ba;
+        margin-top: 10px;
+        padding: 5px 0 5px 0;
+    }
+
+
+    /*footer til mobil*/
+    footer img {
+        width: 50px;
+        margin: 0 8px;
+    }
+
+    footer {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+
+    /*tekst til undersider der kun er tekst på*/
+    .tekstwrapper {
+        margin-bottom: 34px;
+    }
+    .tekst {
+        margin-left: 2%;
+        margin-right: 2%;
+        padding: 0 10px 5px 10px;
+    }
+    .tekst a {
+        text-decoration: none;
+        line-height: 25px;
+    }
+    .tekst p {
+        line-height: 1.6em;
+    }
+    .tekst img {
+        display: block;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*kalender til mobil- lavet ud fra https://bootsnipp.com/snippets/featured/even-better-calendar*/
+    
+
+    /*bokse til Kalendersiden til mobil*/
+    .container {
+        display: none;
+    }
+
+    .col {
+        margin-top: 20px;
+        margin-bottom: auto;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+
+
+    .containertwo {
+        border: solid 1px;
+        margin-bottom: 10px;
+    }
+
+    .containertree {
+        border: solid 1px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+    }
+    
+    .containertwo h1,
+    .containertwo h2{
+        color: #667e90;
+    }
+    
+    .containertree h1,
+    .containertree h2{
+        color: #667e90;
+    }
+
+
+    /*Galleri siden til mobil*/
+    .galleri {
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        color: #667e90;
+    }
+
+    .galleri img {
+        width: 30%;
+        margin-top: 5px;
+        padding: 3px;
+    }
+
+
+    /*ÅBNINGSTIDER til mobil */
+    #pil {
+        display: none;
+    }
+
+    .aawrappertwo {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .aawrappertwo h1,
+    .aawrappertwo h2 {
+        color: #667e90;
+    }
+
+    .aawrapper {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+        width: 80%;
+        background-color: #667e90;
+        color: ghostwhite;
+    }
+
+
+
+
+    /*Personale siden til mobil*/
+    .bok2 img {
+        text-align: center;
+        width: 50%;
+        margin-left: 210px;
+        margin-top: 20px;
+    }
+
+
+    /* underside -Stuerne  til mobil*/
+    .bok {
+
+        margin-top: 30px;
+        margin-bottom: 85px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .bok1 {
+
+        width: 100%;
+        padding: 15px 12px;
+        background-color: lightcoral;
+        border: 2px solid #696969;
+        box-shadow: 3px 3px 3px #bfbcbc;
+    }
+    .bok4 {
+        width: 100%;
+        padding: 15px 12px;
+        background-color: lightseagreen;
+        border: 2px solid #696969;
+        box-shadow: 3px 3px 3px #bfbcbc;
+    }
+
+    .bok3 {
+        width: 100%;
+        padding: 15px 12px;
+        background-color: lightblue;
+        border: 2px solid #696969;
+        box-shadow: 3px 3px 3px #bfbcbc;
+    }
+
+
+    /* personale - til mobil */
+ 
+
+  
+ .boka{
+  text-align: center;
+  
+  
+ }
+ 
+ .bokb{
+  text-align: center;
+   
+ }
+ 
+ .bokc{
+  text-align: center;
+ }
+ 
+ .bokd{
+  text-align: center;
+ }
+ 
+ 
+ 
+    /*billede på kontaktside*/
+    #kontaktimg {
+        width: 90%;
+    }
+}
+
+
+/* CSS til WEBVERSION*/
+
+@media only screen and (min-width: 1200px) {
+
+    /*Disse ting skal ikke vises på Web*/
+    #forsidebillede {
+        display: none;
+    }
+
+    #logomobil {
+        display: none;
+    }
+
+    #backarrow {
+        display: none;
+    }
+    #slideshow-wrappermobil {
+        display: none;
+    }
+
+
+    /*header*/
+    header {
+        background-color: #ffffff;
+        width: 100%;
+        position: absolute;
+    }
+
+
+    /*logo til web*/
+    #logoweb {
+        padding: 15px 0px;
+        width: 175px;
+        float: left;
+        margin-left: 5%;
+    }
+
+
+    /*Menu til web*/
+    .menuweb {
+        font-family: "Open Sans", sans-serif;
+        float: right;
+        list-style-type: none;
+        margin: 40px 5% 0 0;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    .menuweb li {
+        float: left;
+        display: inline;
+        margin-left: 10px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        overflow: hidden;
+    }
+
+    .menuweb li a {
+        display: inline-block;
+
+        padding: 5px 18px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        border-style: solid;
+        border-width: 2px;
+        border-color: #696969;
+    }
+
+    li a {
+        color: #696969;
+    }
+    
+    .menuweb .notweb{
+        display:none;
+    }
+
+    .active {
+        border-style: solid;
+        border-width: 1.5px;
+        border-color: #696969;
+    }
+
+
+    /*dropdown menu*/
+    .dropdown {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .dropdown .dropbtn {
+        padding: 5px 18px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #ffffff;
+        min-width: 130px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: #696969;
+    }
+
+    .dropdown:hover .dropbtn {
+        border: 2px solid #696969;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /*slideshow bliver skuppet ned på siden, så det ikke står under menulinje*/
+    .position {
+        margin-top: 110px;
+    }
+
+
+    /*slideshow til web*/
+    #slideshow-wrapper {
+        width: 100%;
+        height: 400px;
+        margin: 30px auto;
+    }
+
+    #slideshow {
+        margin-bottom: 5px;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    #slideshow img {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    /*de 3 bokse til forsiden*/
+    .bokse {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .bokse h2 {
+        font-size: 1em;
+        text-align: center;
+        line-height: 0.5em;
+        color: #667e90;
+    }
+
+    .bokse p {
+        line-height: 1.9em;
+        margin-left: 10px;
+        font-size: 0.9em;
+    }
+
+    .bokse a {
+        line-height: 8em;
+        width: 100px;
+        text-decoration: none;
+        font-size: 0.8em;
+        margin-left: 15px;
+    }
+    .boks1 {
+        border: 2px solid #696969;
+        width: 300px;
+        height: 300px;
+        background-color: #f5f5f5;
+        box-shadow: 3px 3px 3px #bfbcbc;
+    }
+
+    .tekstogikon {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .boks1 img {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+
+    /*footer til web*/
+    footer img {
+        width: 50px;
+        margin: 0 8px;
+    }
+
+    footer {
+        padding-top: 10px;
+        margin-top: 60px;
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .lefttext p {
+        font-size: 0.6em;
+        line-height: 0.7em
+    }
+
+    .centertext {
+        font-size: 0.8em;
+        margin-top: 10px;
+
+    }
+
+    .fbintra {
+        margin-top: 10px;
+    }
+
+
+    /*tekst til undersider der kun er tekst på*/
+    .tekstwrapper {
+        margin-top: 150px;
+        margin-bottom: 34px;
+        margin-left: 18%;
+        margin-right: 18%;
+        background-color: #ffffff;
+    }
+    .tekst {
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+    .tekst a {
+        text-decoration: none;
+        line-height: 25px;
+    }
+    .tekst p {
+        line-height: 1.6em;
+    }
+    .tekst img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+   
+    
+    /*KALENDER*/
+ 
+  /* kalender til venstre */
+
+
+  .col {
+
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+
+    #kalenderwrapper {
+        display: flex;
+        width: 100%;
+        height: 750px;
+       margin-top: 10px;
+    }
+
+ 
+ 
+ #datepicker{
+ margin-top: 20px;
+  
+  
+ }
+ 
+
+    /*bokse til kalender siden*/
+    .container {
+        display: flex;
+        justify-content: left;
+        background-color: #667e90;
+        width: 25%;
+        margin-top: 160px;
+     margin-left: auto;
+     margin-right: auto;
+  color: #ffffff;
+     
+    }
+
+    .containertwo {
+        color: #696969;
+        display: flex;
+    background-color: ghostwhite;
+        font-size: 1.2em;
+        line-height: 1.3;
+        width: 33%;
+        margin-top: 160px;
+     margin-left: auto;
+     margin-right: auto;
+    
+       
+    }
+
+    .containertree {
+        color: ghostwhite;
+     background-color:#667e90; 
+        display: flex;
+    border: 2px;
+        font-size: 1.2em;
+        line-height: 1.3;
+        width: 33%;
+        margin-top: 160px;
+     margin-left: auto;
+     margin-right: auto;
+     
+       
+    }
+
+   
+    /* GALLERI */
+    .galleri {
+        color: #667e90;
+        text-align: center;
+        margin-top: 100px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .galleri img {
+        width: 17%;
+        margin-top: 5px;
+        padding: 3px;
+        filter: grayscale(100%);
+        transition: 2s;
+    }
+
+    .gallery img:hover {
+        filter: grayscale(0);
+        transform: scale(1.1);
+    }
+
+
+    /*OM OS  - underside -Stuerne */
+    /*tekst på Stuerne */
+    .bok {
+
+        display: flex;
+        justify-content: space-around;
+        margin-top: 90px;
+        margin-bottom: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+   
+    }
+
+    .bok1 {
+        justify-content: space-between;
+        width: 30%;
+        padding: 15px 12px;
+        background-color: lightcoral;
+        border: 2px solid #696969;
+        box-shadow: 3px 3px 3px #bfbcbc;
+    }
+
+    .bok4 {
+        justify-content: space-between;
+        width: 30%;
+        padding: 15px 12px;
+        background-color: lightseagreen;
+        border: 2px solid #696969;
+        box-shadow: 3px 3px 3px #bfbcbc;
+    }
+
+    .bok3 {
+        justify-content: space-between;
+        width: 30%;
+        padding: 15px 12px;
+        background-color: lightblue;
+        border: 2px solid #696969;
+        box-shadow: 3px 3px 3px #bfbcbc;
+    }
+
+
+    /*ÅBNINGSTIDER  */
+    /*pil der bevæger uendeligt sig op og ned */
+    #pil {
+        width: 50px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        -webkit-animation: mymove 5s infinite;
+        animation: mymove 1.5s infinite;
+    }
+
+    @-webkit-keyframes mymove {
+        from {
+            left: 0px;
+            top: -20px;
+        }
+        to {
+            left: 0px;
+            top: 30px;
+        }
+    }
+
+    #pil img {
+        width: 100%;
+    }
+
+
+    .aawrapper {
+        padding-left: 50px;
+        padding-top: 40px;
+        padding-bottom: 10px;
+        margin-top: 120px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 20px;
+        width: 80%;
+        height: 310px;
+        background-color: #667e90;
+        color: ghostwhite;
+        font-size: 1.4em;
+    }
+
+    .aawrappertwo h1,
+    .aawrappertwo h2 {
+        color: #667e90;
+    }
+
+    .aawrapperh1 {
+        float: left;
+    }
+    .aawrapperp {
+        float: right;
+        margin-right: 50px;
+    }
+
+
+
+    .aawrappertwo {
+        text-align: center;
+        margin-top: 20px;
+        background-color: white;
+    }
+
+
+    /*PERSONALE  */
+    #per-wrapper{
+
+  margin-top: 170px;
+        
+}
+ 
+ /*bokse i forskellige farver*/
+ 
+ .boka{
+  background-color: aliceblue;
+ width: 25%;
+  float: left;
+   text-align: center;
+border: solid #ecf5d4 15px;
+  padding-bottom: 30px;
+  
+  
+ }
+ 
+ .bokb{
+ 
+  background-color: lightcoral;
+ float:left;
+  width: 25%;
+   text-align: center;
+  border: solid #ecf5d4 15px;
+  padding-bottom: 30px;
+  
+  
+ }
+ 
+ .bokc{
+  background-color: lightseagreen;
+  float: left;
+  width: 25%;
+   text-align: center;
+  border: solid #ecf5d4 15px;
+   padding-bottom: 30px;
+ 
+ }
+ 
+ 
+ .bokd{
+  background-color: lightblue;
+  float: left;
+  width: 25%;
+  text-align: center;
+   border: solid #ecf5d4 15px;
+   padding-bottom: 30px;
+  
+  
+ }
+  
+ 
+
+ 
+    
+    /*meld dit barn ind img*/
+    .blomst{
+        width:60%;
+    }
+ 
+  /*back to top buttom*/
+    #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: darkgrey;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+}

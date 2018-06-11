@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initiale-scale=1.0">
+    <meta name="description" content="Kontakt informationer på Paletten daginstitution">
+    <link rel="stylesheet" type="text/css" href="css/stylefinal.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik" rel="stylesheet">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/slideshow.js"></script>
+    <title>Paletten</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img id="backarrow" src="images/backarrow.png" alt="tilbageknap"></a>
+        <a href="index.html"><img id="logomobil" src="images/paletten%20logo4.png" alt="palettens logo"></a>
+        <a href="index.html"><img id="logoweb" src="images/paletten%20logo.jpg" alt="palettens logo"></a>
+        <nav>
+            <ul class="notmobil menuweb">
+                <li class="notmobil"><a href="index.html">HJEM</a></li>
+                <li class="dropdown notmobil">
+                    <a class="active dropbtn">OM OS</a>
+                    <div class="dropdown-content">
+                        <a href="aabningstider.html">ÅBNINGSTIDER</a>
+                        <a href="stuerne.html">STUERNE</a>
+                        <a href="personale.html">PERSONALE</a>
+                        <a href="institutionen.html">INSTITUTIONEN</a>
+                        <a class="active" href="kost.html">KOST</a>
+                        <a href="paedagogik.html">PÆDAGOGIK</a>
+                    </div>
+                </li>
+                <li class="notweb"><a href="omos.html">OM OS</a></li>
+                <li><a href="kalender.html">KALENDER</a></li>
+                <li><a href="galleri.html">GALLERI</a></li>
+                <li class="dropdown notmobil">
+                    <a class="dropbtn">NYE FORÆLDRE</a>
+                    <div class="dropdown-content">
+                        <a href="for%C3%A6ldrebetyrelse.html">FORÆLDREBESTYRELSE</a>
+                        <a href="vedsygdom.html">VED SYGDOM</a>
+                        <a href="meldditbarnind.html">MELD DIT BARN IND</a>
+                    </div>
+                </li>
+                <li class="notweb"><a href="nyeforaeldre.html">NYE FORÆLDRE</a></li>
+                <li class="notweb"><a href="kontakt.html">KONTAKT</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="tekstwrapper">
+        <div class="tekst">
+            <h1>Kontakt os</h1>
+            <img id="kontaktimg" src="images/natur1.png" alt="kontakt os" width="400">
+
+            <h2> Adresse:</h2>
+
+            <p>Dii Paletten<br> Klokkeskovvej 9 Stavtrup <br>8260 Viby J<br> tlf: 2332 9960 </p>
+            <h2>Pædagogisk leder:</h2>
+            <p> Susanne Mosegaard Rasmussen <br>Tlf: 2332 9960 <br>Mail:<a href="mailto:smr@aarhus.dk."> smr@aarhus.dk.</a></p>
+            <h2>Dagtilbudsleder:</h2>
+            <p>Annemarie Dahlgaard <br>Tlf: 29204447 <br> Mail: <a href="mailto:anda@aarhus.dk">anda@aarhus.dk</a> </p>
+        </div>
+    </div>
+
+        <div class="notmobil">
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button></div>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+    
+    <footer>
+        <div class="flex-container">
+            <div class="lefttext">
+                <p>DII PALETTEN</p>
+                <p>KLOKKESKOVVEJ 9</p>
+                <p>8200 VIBY J</p>
+                <p>TLF: 23 32 99 60</p>
+            </div>
+            <div class="centertext">
+                <p>Mail: <a href="mailto:smr@aarhus.dk">smr@aarhus.dk</a></p>
+            </div>
+            <div class="fbintra">
+                <a href="https://www.facebook.com/groups/2066792350309453/" target="_blank"><img src="images/facebook.png" alt="Facebook ikon"></a>
+                <a href="https://itunes.apple.com/dk/app/børneintra/id796569040?l=da&mt=8" target="_blank"><img src="images/intra.jpg" alt="Intra ikon"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
